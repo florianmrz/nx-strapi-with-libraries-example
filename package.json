@@ -1,0 +1,23 @@
+{
+  "name": "nx-strapi",
+  "version": "0.0.0",
+  "license": "MIT",
+  "scripts": {},
+  "private": true,
+  "devDependencies": {
+    "@nrwl/eslint-plugin-nx": "15.7.0",
+    "@nrwl/js": "^15.7.0",
+    "@nrwl/linter": "15.7.0",
+    "@nx-extend/strapi": "^3.4.0",
+    "@typescript-eslint/eslint-plugin": "^5.36.1",
+    "@typescript-eslint/parser": "^5.36.1",
+    "eslint": "~8.15.0",
+    "eslint-config-prettier": "8.1.0",
+    "nx": "15.6.3",
+    "prettier": "^2.6.2"
+  },
+  "workspaces": [
+    "packages/*"
+  ],
+  "dependencies": {}
+}
