@@ -73,7 +73,7 @@ module.exports = (config, webpack) => {
 ⚠️**Important note**: Make sure that the path entries in your base TS config don't use a file extension such as `.ts`. Because the transpiled files will end in `.js`, those imports will fail!
 
 Simply omit the extension, e.g.:
-```json
+```js
 // tsconfig.base.json
 "@my-project/shared/example": ["packages/shared/src/example.ts"] // fails
 "@my-project/shared/example": ["packages/shared/src/example"]    // works
@@ -82,7 +82,7 @@ Simply omit the extension, e.g.:
 We also need to update the tsconfig files for both the admin panel as well as the server-side one.
 They need to extend our base tsconfig file that includes our `paths` options resolving to our libraries.
 
-```json
+```js
 // packages/my-app/tsconfig.json
 {
   // We need to extend our base tsconfig file
@@ -94,7 +94,7 @@ They need to extend our base tsconfig file that includes our `paths` options res
   },
 }
 ```
-```json
+```js
 // packages/my-app/src/admin/tsconfig.json
 {
   // We need to extend our base tsconfig file
@@ -110,7 +110,7 @@ They need to extend our base tsconfig file that includes our `paths` options res
 ## Scripts to serve, build and start (a production build)
 
 To serve and build the project using the local script, I updated the project configuration:
-```json
+```js
 // packages/my-app/project.json
 // ...
 "targets": {
