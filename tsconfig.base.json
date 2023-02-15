@@ -15,8 +15,7 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@nx-strapi/example": ["libs/components/src/assets/*"],
-      "example": ["packages/example/src/index.ts"]
+      "@nx-strapi/example": ["packages/example/src/index"]
     }
   },
   "exclude": ["node_modules", "tmp"]

@@ -1,13 +1,21 @@
 {
-  "extends": "@strapi/typescript-utils/tsconfigs/admin",
-  "include": [
-    "../plugins/**/admin/src/**/*",
-    "./"
-  ],
-  "exclude": [
-    "node_modules/",
-    "build/",
-    "dist/",
-    "**/*.test.ts"
-  ]
+  "extends": "../../../../tsconfig.base.json",
+  "compilerOptions": {
+    "module": "ES2020",
+    "moduleResolution": "node",
+    "lib": ["ES2020", "DOM"],
+    "target": "ES5",
+
+    "jsx": "react",
+    "sourceMap": true,
+    "incremental": true,
+
+    "allowJs": true,
+    "allowSyntheticDefaultImports": true,
+    "resolveJsonModule": true,
+    "noEmit": true,
+    "skipLibCheck": true
+  },
+  "include": ["../plugins/**/admin/src/**/*", "./"],
+  "exclude": ["node_modules/", "build/", "dist/", "**/*.test.ts"]
 }
