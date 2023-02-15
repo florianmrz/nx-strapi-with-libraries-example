@@ -1,6 +1,20 @@
 # Making Strapi work with nx libraries
 
-More information in this [Github issue](https://github.com/TriPSs/nx-extend/issues/49).
+## What is this about?
+
+This repo includes an example setup to get [Strapi](https://github.com/strapi/strapi) to work with nx libraries.
+
+When starting the project, you can see the log
+```
+Strapi is starting: bar
+```
+to demonstrate server-side import of nx libraries and
+```
+The example plugin is running: bar
+```
+to demonstrate the import inside of a admin panel plugin.
+
+More information about the issue at hand can be found in [this Github issue](https://github.com/TriPSs/nx-extend/issues/49).
 
 There are a few issues when trying to get this to work, mainly because Strapi expects a specific folder structure to exist at various points during the build time and during runtime.
 
